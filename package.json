@@ -1,0 +1,46 @@
+{
+	"name": "@solution/root",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"admin": "pnpm --filter @solution/admin dev",
+		"admin:markup": "pnpm --filter @solution/admin markup",
+		"admin:css": "pnpm --filter @solution/admin css"
+	},
+	"dependencies": {
+		"@vueuse/core": "^10.3.0",
+		"vue": "^3.3.4",
+		"vue-plugin-load-script": "^2.1.1",
+		"vue-router": "^4.2.4"
+	},
+	"devDependencies": {
+		"@rushstack/eslint-patch": "^1.6.1",
+		"@stylistic/eslint-plugin": "^1.5.1",
+		"@stylistic/eslint-plugin-ts": "^1.5.1",
+		"@types/blueimp-load-image": "^5.16.6",
+		"@types/node": "^20.10.5",
+		"@typescript-eslint/eslint-plugin": "^6.16.0",
+		"@typescript-eslint/parser": "^6.16.0",
+		"@vitejs/plugin-vue": "^5.0.0",
+		"eslint": "^8.56.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-promise": "^6.1.1",
+		"eslint-plugin-vue": "^9.19.2",
+		"postcss": "^8.4.32",
+		"postcss-html": "^1.5.0",
+		"sass": "^1.69.5",
+		"stylelint": "15.11.0",
+		"stylelint-config-recommended": "13.0.0",
+		"stylelint-config-recommended-scss": "13.1.0",
+		"stylelint-config-recommended-vue": "1.5.0",
+		"stylelint-config-standard-scss": "11.1.0",
+		"stylelint-order": "6.0.4",
+		"typescript": "^5.3.3",
+		"vite": "^5.0.10",
+		"vite-tsconfig-paths": "^4.2.2",
+		"vue-eslint-parser": "^9.3.2",
+		"vue-tsc": "^1.8.27"
+	}
+}

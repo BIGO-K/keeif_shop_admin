@@ -1,0 +1,18 @@
+{
+	"extends": "./tsconfig.base",
+	"compilerOptions": {
+		// "rootDir": "./",
+		// "baseUrl": "./",
+		"paths": {
+			"$/*": ["./*"],
+		},
+		// "typeRoots": [
+		// 	"node_modules/@types",
+		// ],
+	},
+	"include": [
+		"@types/**/*.ts",
+		"./*.d.ts"
+	],
+	// "references": [{ "path": "./tsconfig.node.json" }], // 빌드 의존성 관리
+}

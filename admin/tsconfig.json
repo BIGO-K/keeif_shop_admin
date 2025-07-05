@@ -1,0 +1,29 @@
+{
+	"extends": "../tsconfig.base",
+	"compilerOptions": {
+		"rootDir": "../",
+		// "baseUrl": "./",
+		"paths": {
+			"@/*": ["./src/*"],
+			"$/*": ["./../*"],
+		},
+		// "typeRoots": [ // 기본 typeRoots에 node_modules/@types, ../node_modules/@types, ../../node_modules/@types ... 등 포함
+		// 	"../node_modules/@types",
+		// 	"../node_modules",
+		// ],
+		"types": [
+			"node",
+			"vite/client",
+		],
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue",
+
+		"../env.d.ts",
+		"vite.config.ts"
+	],
+	// "references": [{ "path": "./tsconfig.node.json" }], // 빌드 의존성 관리
+}
